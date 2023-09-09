@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="curriculum.css">
+    <title>Mi Currículum</title>
+</head>
+<body>
+    <div class="curriculum">
+        <div class="header">
+            <div class="name">Stefano Aguilar</div>
+            <h2>Habilidades</h2>
+            <div class="skills">
+                <div class="skill">
+                    <div class="skill-name">Java</div>
+                    <div class="progress">
+                        <div class="progress-bar" style="width: 48%;"></div>
+                    </div>
+                </div>
+                <div class="skill">
+                    <div class="skill-name">JavaScript</div>
+                    <div class="progress">
+                        <div class="progress-bar" style="width: 30%;"></div>
+                    </div>
+                </div>
+                <div class="skill">
+                    <div class="skill-name">Python</div>
+                    <div class="progress">
+                        <div class="progress-bar" style="width: 25%;"></div>
+                    </div>
+                </div>
+                <div class="skill">
+                    <div class="skill-name">React</div>
+                    <div class="progress">
+                        <div class="progress-bar" style="width: 25%;"></div>
+                    </div>
+                </div>
+                <div class="skill">
+                    <div class="skill-name">Arduino</div>
+                    <div class="progress">
+                        <div class="progress-bar" style="width: 50%;"></div>
+                    </div>
+                </div>
+                <div class="skill">
+                    <div class="skill-name">Django</div>
+                    <div class="progress">
+                        <div class="progress-bar" style="width: 25%;"></div>
+                    </div>
+                </div> 
+                <div class="skill">
+                    <div class="skill-name">Sql</div>
+                    <div class="progress">
+                        <div class="progress-bar" style="width: 50%;"></div>
+                    </div>
+                </div>
+            </div>
+            
+            <h2>Idiomas</h2>
+            <ul>
+                <li>Español (Nativo)</li>
+                <li>Inglés B1</li>
+            </ul>
+        </div>
+
+        <div class="right">
+
+            <div class="header-top">
+                <button id="dark-mode-btn">Modo Oscuro</button>
+                <div class="language-switch">
+                    <a href="spanish.html">Español</a> | <a href="english.html">English</a>
+                </div>
+            </div>
+
+            <div class="profile">
+                <h2>Perfil Profesional</h2>
+                <p>¡Hola! Soy Stefano Aguilar, estudiante de ingeniería en Tecnologías de la Información, actualmente en el quinto semestre. Apasionado por la tecnología y el desarrollo, he liderado proyectos destacados, incluyendo calculadoras de direcciones IP para IPv4 y IPv6, así como la creación de interfaces conectadas a bases de datos utilizando Python.
+
+                    Tengo habilidades en diversos lenguajes de programación, como Java, Python, PHP, HTML, CSS y JavaScript. Mi capacidad para trabajar bajo presión y encontrar soluciones efectivas es una fortaleza, y me adapto bien tanto como líder de equipo o como miembro colaborador.
+                    
+                    Me entusiasma la resolución de problemas y la innovación, y disfruto compartiendo conocimientos con colegas. Busco contribuir a proyectos desafiantes y seguir creciendo en la ingeniería en Tecnologías de la Información. 
+                </p>
+            </div>
+            <h2>Proyectos</h2>
+            <div class="projects">
+                
+                <div class="project">
+                    <div class="project-info">
+                        <h3><a href="#">Calculadora de redes</a></h3>
+                        <p>Una calculadora de direcciones IP para IPv4 y IPv6.</p>
+                    </div>
+                    <img class="project-image" src="img/calculadora.jpeg" alt="Calculadora de redes">
+                </div>
+                <div class="project">
+                    <div class="project-info">
+                        <h3><a href="#">Sistema de logueo (Python)</a></h3>
+                        <p>Un sistema de inicio de sesión desarrollado en Python.</p>
+                    </div>
+                    <img class="project-image" src="img/login.jpg" alt="Sistema de logueo (Python)">
+                </div>
+            </div>
+            
+            
+            <div class="education">
+                <h2>Educación</h2>
+                <ul>
+                    <li>Bachiller en Ciencias</li>
+                    <li>Certificación de Google</li>
+                    <li>Curso de Bases de Datos</li>
+                    <li>Curso de Programación Web (React, Reactive, etc.)</li>
+                </ul>
+            </div>
+            
+            <footer>
+                <div class="contact-form">
+                    <h3>Contacto</h3>
+                    <form>
+                        <div class="form-group">
+                            <label for="nombre">Nombre:</label>
+                            <input type="text" id="nombre" name="nombre" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="correo">Correo:</label>
+                            <input type="email" id="correo" name="correo" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="celular">Número de Celular:</label>
+                            <input type="tel" id="celular" name="celular" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="mensaje">Mensaje:</label>
+                            <textarea id="mensaje" name="mensaje" rows="4" required></textarea>
+                        </div>
+                        <button type="submit">Enviar</button>
+                    </form>
+                </div>
+                <div class="social-icons">
+                    <a href="https://api.whatsapp.com/send?phone=+593995389259" target="_blank">
+                        <img src="img/whatsapp.png" alt="WhatsApp">
+                    </a>
+                    <a href="https://github.com/StefanoIG" target="_blank">
+                        <img src="/img/github.png" alt="GitHub">
+                    </a>
+                </div>
+            </footer>
+            
+            
+        </div>
+    </div>
+    <script>
+        const darkModeBtn = document.getElementById('dark-mode-btn');
+        const body = document.body;
+      
+        // Verifica si el usuario ya eligió un modo previamente
+        if (localStorage.getItem('darkMode') === 'true') {
+          enableDarkMode();
+        }
+      
+        // Agrega un evento de clic al botón
+        darkModeBtn.addEventListener('click', () => {
+          if (body.classList.contains('dark-mode')) {
+            // Si ya está en modo oscuro, cambia a claro
+            disableDarkMode();
+          } else {
+            // Si no está en modo oscuro, cambia a oscuro
+            enableDarkMode();
+          }
+        });
+      
+        // Habilita el modo oscuro
+        function enableDarkMode() {
+          body.classList.add('dark-mode');
+          localStorage.setItem('darkMode', 'true');
+        }
+      
+        // Deshabilita el modo oscuro
+        function disableDarkMode() {
+          body.classList.remove('dark-mode');
+          localStorage.setItem('darkMode', 'false');
+        }
+      </script>
+      
+      
+</body>
+</html>

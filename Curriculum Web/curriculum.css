@@ -1,0 +1,359 @@
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    height: 100%; /* Asegura que ocupe toda la altura de la ventana */
+}
+
+/* Estilo para el contenedor principal */
+.curriculum {
+    display: flex;
+    background-color: #f0f0f0;
+    padding: 20px;
+    height: 100%; /* Toma toda la altura disponible */
+}
+
+/* Estilo para el encabezado (header) */
+.header {
+    position: relative;
+    width: 230px;
+    background-color: #3498db;
+    border-top-right-radius: 15%;
+    border-bottom-right-radius: 15%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Centra verticalmente el contenido */
+    align-items: center; /* Centra horizontalmente el contenido */
+    color: #fff; /* Añade color de texto para que sea legible */
+    padding: 20px;
+}
+
+.name {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.left {
+    flex: 1.5; /* Ajusta el ancho de la sección izquierda */
+    padding: 20px;
+    background-color: #f0f0f0;
+}
+
+h2 {
+    color: #333;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+li {
+    margin-bottom: 10px;
+}
+
+.right, .education{
+    flex: 2;
+    padding: 20px;
+    background-color: #f7f7f7;
+}
+
+/* Estilos para enlaces */
+a {
+    color: #3498db;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Estilo para proyectos */
+.projects {
+
+    margin-top: 20px;
+    display: flex;
+    flex-direction: row;
+}
+
+.project {
+    margin: 8px;
+    width: 175px; /* Para que los proyectos estén en dos columnas */
+    border: 1px solid #ddd;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: #fff;
+    margin-bottom: 20px;
+}
+
+.project-info {
+    flex: 1;
+}
+
+.project h3 {
+    margin: 0;
+    font-size: 14px;
+}
+
+.project p {
+    margin-top: 5px;
+    font-size: 12px;
+    color: #777;
+}
+
+.project-image {
+    width: 75px;
+    margin-top: 5px;
+    border-radius: 5px;
+}
+
+/* Estilos para barras de progreso */
+.skills {
+    margin-top: 20px;
+}
+
+.skill {
+    margin-bottom: 10px;
+}
+
+.skill-name {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.progress {
+    width: 100%;
+    height: 10px;
+    background-color: #ddd;
+    border-radius: 5px;
+    position: relative;
+}
+
+.progress-bar {
+    height: 100%;
+    background-color: #ff2e09;
+    border-radius: 5px;
+}
+
+/* Estilo para la sección de Educación */
+.education {
+    margin-top: 20px;
+}
+
+.education h2 {
+    color: #333;
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.education ul {
+    list-style:circle;
+    padding: 0;
+}
+
+.education li {
+    margin-bottom: 10px;
+    font-size: 14px;
+}
+
+/* Estilo para la  seccion del Footer*/
+footer {
+    border-radius: 2%;
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.contact-form {
+    flex: 1;
+    margin-right: 20px;
+}
+
+.contact-form h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+}
+
+.form-group {
+    margin-bottom: 10px;
+}
+
+label {
+    display: block;
+    font-weight: bold;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #fff;
+    border-radius: 5px;
+}
+
+button {
+    background-color: #fff;
+    color: #333;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+button:hover {
+    background-color: #555;
+    color: #fff;
+}
+
+.social-icons {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin-top: 20px;
+    margin-left: 20px;
+
+}
+
+.social-icons a {
+    margin-right: 10px;
+}
+
+.social-icons img {
+
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+}
+
+/* Estilos para dispositivos móviles */
+@media screen and (max-width: 768px) {
+    footer {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .contact-form {
+        margin-right: 0;
+    }
+    
+    .social-icons {
+        margin-top: 20px;
+    }
+}
+
+/* Agrega estos estilos al final de tu archivo CSS existente */
+
+/* Estilos para la parte superior del encabezado */
+.header-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+}
+
+#dark-mode-btn {
+    background-color: #fff;
+    color: #333;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.language-switch {
+    font-size: 14px;
+}
+
+.language-switch a {
+    color: #fff;
+    text-decoration: none;
+}
+
+/* Estilos para dispositivos móviles */
+@media screen and (max-width: 768px) {
+    .header-top {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    #dark-mode-btn {
+        margin-top: 10px;
+    }
+    
+    .language-switch {
+        margin-top: 10px;
+    }
+}
+/* Estilos para el modo oscuro */
+.dark-mode {
+    background-color: #333;
+    color: #fff;
+}
+
+.dark-mode .header-top {
+    background-color: #222;
+}
+
+.dark-mode #dark-mode-btn {
+    background-color: #333;
+    color: #fff;
+}
+
+.dark-mode .language-switch a {
+    color: #fff;
+}
+
+/* Estilo para el modo oscuro */
+body.dark-mode {
+    background-color: #333;
+    color: #fff;
+}
+
+/* Estilo para el modo oscuro */
+body.dark-mode {
+    background-color: #333;
+    color: #fff;
+}
+
+.dark-mode .curriculum {
+    background-color: #222;
+}
+
+.dark-mode .header {
+    background-color: #888888;
+}
+
+.dark-mode .header-top {
+    background-color: #606060;
+    color: #fff;
+}
+
+.dark-mode #dark-mode-btn {
+    background-color: #444;
+    color: #fff;
+}
+
+.dark-mode .language-switch a {
+    color: #fff;
+}
+
+.dark-mode body{
+    background-color: #111;
+    color: #fff;
+}
+
+.dark-mode .right {
+    background-color: #111;
+    color: #fff;
+}
