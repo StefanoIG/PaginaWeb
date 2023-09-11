@@ -6,40 +6,6 @@ body {
     height: 100%; /* Asegura que ocupe toda la altura de la ventana */
 }
 
-/* Estilo para el contenedor principal */
-.curriculum {
-    display: flex;
-    background-color: #f0f0f0;
-    padding: 20px;
-    height: 100%; /* Toma toda la altura disponible */
-}
-
-/* Estilo para el encabezado (header) */
-.header {
-    position: relative;
-    width: 230px;
-    background-color: #3498db;
-    border-top-right-radius: 15%;
-    border-bottom-right-radius: 15%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center; /* Centra verticalmente el contenido */
-    align-items: center; /* Centra horizontalmente el contenido */
-    color: #fff; /* Añade color de texto para que sea legible */
-    padding: 20px;
-}
-
-.name {
-    font-size: 24px;
-    font-weight: bold;
-}
-
-.left {
-    flex: 1.5; /* Ajusta el ancho de la sección izquierda */
-    padding: 20px;
-    background-color: #f0f0f0;
-}
-
 h2 {
     color: #333;
 }
@@ -51,6 +17,26 @@ ul {
 
 li {
     margin-bottom: 10px;
+}
+
+/* Estilo para el contenedor principal */
+.curriculum {
+    display: flex;
+    background-color: #efefef;
+    padding: 20px;
+    height: 100%; /* Toma toda la altura disponible */
+}
+
+.class_foto{
+    border: 2px solid black;
+    width: 90px;
+    border-radius: 20%;
+}
+
+.name {
+    margin: 40px;
+    font-size: 24px;
+    font-weight: bold;
 }
 
 .right, .education{
@@ -69,26 +55,38 @@ a:hover {
     text-decoration: underline;
 }
 
+/* Estilo para el encabezado (header) */
+.header {
+    position: relative;
+    width: 230px;
+    background-color: #3498db;
+    border-top-right-radius: 15%;
+    border-bottom-right-radius: 15%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Centra verticalmente el contenido */
+    align-items: center; /* Centra horizontalmente el contenido */
+    color: #fff; /* Añade color de texto para que sea legible */
+    padding: 10px;
+}
+
 /* Estilo para proyectos */
 .projects {
-
-    margin-top: 20px;
+    margin-top: 10px;
     display: flex;
     flex-direction: row;
 }
 
 .project {
-    margin: 8px;
-    width: 175px; /* Para que los proyectos estén en dos columnas */
+    display: flex;
+    justify-content:space-between;
+    margin: 10px;
+    width: 175px;
     border: 1px solid #ddd;
     padding: 10px;
     border-radius: 5px;
     background-color: #fff;
     margin-bottom: 20px;
-}
-
-.project-info {
-    flex: 1;
 }
 
 .project h3 {
@@ -132,14 +130,11 @@ a:hover {
 
 .progress-bar {
     height: 100%;
-    background-color: #ff2e09;
+    background-color: #61f34ec4;
     border-radius: 5px;
 }
 
 /* Estilo para la sección de Educación */
-.education {
-    margin-top: 20px;
-}
 
 .education h2 {
     color: #333;
@@ -159,16 +154,24 @@ a:hover {
 
 /* Estilo para la  seccion del Footer*/
 footer {
-    border-radius: 2%;
+    margin-top: 120px;
+    max-width: 200px;
+    max-height: 475px;
+    border-radius: 3.5%;
     background-color: #333;
     color: #fff;
     padding: 20px;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    flex-direction: column;
+    text-align: center;
 }
 
 .contact-form {
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
     flex: 1;
     margin-right: 20px;
 }
@@ -215,7 +218,7 @@ button:hover {
 
 .social-icons {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     text-align: center;
     margin-top: 20px;
     margin-left: 20px;
@@ -233,33 +236,19 @@ button:hover {
     border-radius: 50%;
 }
 
-/* Estilos para dispositivos móviles */
-@media screen and (max-width: 768px) {
-    footer {
-        flex-direction: column;
-        text-align: center;
-    }
-    
-    .contact-form {
-        margin-right: 0;
-    }
-    
-    .social-icons {
-        margin-top: 20px;
-    }
+.mode{
+    color: #111;
 }
-
-/* Agrega estos estilos al final de tu archivo CSS existente */
-
 /* Estilos para la parte superior del encabezado */
 .header-top {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #333;
     color: #fff;
     padding: 10px 20px;
 }
+
+
 
 #dark-mode-btn {
     background-color: #fff;
@@ -280,29 +269,10 @@ button:hover {
     text-decoration: none;
 }
 
-/* Estilos para dispositivos móviles */
-@media screen and (max-width: 768px) {
-    .header-top {
-        flex-direction: column;
-        text-align: center;
-    }
-    
-    #dark-mode-btn {
-        margin-top: 10px;
-    }
-    
-    .language-switch {
-        margin-top: 10px;
-    }
-}
 /* Estilos para el modo oscuro */
 .dark-mode {
     background-color: #333;
     color: #fff;
-}
-
-.dark-mode .header-top {
-    background-color: #222;
 }
 
 .dark-mode #dark-mode-btn {
@@ -314,15 +284,15 @@ button:hover {
     color: #fff;
 }
 
-/* Estilo para el modo oscuro */
-body.dark-mode {
-    background-color: #333;
+.dark-mode .mode {
+    padding: 10px;
+    justify-content: center;
+    align-items: center;
     color: #fff;
 }
 
-/* Estilo para el modo oscuro */
 body.dark-mode {
-    background-color: #333;
+    background-color: #222;
     color: #fff;
 }
 
@@ -331,11 +301,10 @@ body.dark-mode {
 }
 
 .dark-mode .header {
-    background-color: #888888;
+    background-color: #3d3d3d;
 }
 
 .dark-mode .header-top {
-    background-color: #606060;
     color: #fff;
 }
 
@@ -354,6 +323,306 @@ body.dark-mode {
 }
 
 .dark-mode .right {
-    background-color: #111;
+    background-color:rgba(0,0,0,.09);
     color: #fff;
+}
+
+.dark-mode .profile p{
+    background-color: #3d3d3d;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.dark-mode .education{
+    padding-right: 10px;
+    background-color: #222;
+    border-radius:10px ;
+}
+.dark-mode .education h2 {
+    color: white;
+    border-radius:10px ;
+}
+.dark-mode .profile  h2{
+    color: white;
+}
+
+.dark-mode   h2{
+    color: white;
+}
+
+.dark-mode .project{
+    background-color: #222;
+}
+.dark-mode .project p{
+    color: white;
+}
+.dark-mode .project a{
+    color: #f6f6f6;
+}
+.dark-mode .class_foto{
+    border: 1px solid white;
+}
+
+
+/* Estilo para el switch */
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 50px;
+    height: 24px;
+    margin-right: 10px;
+}
+
+.switch input {
+    display: none;
+}
+
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    border-radius: 24px;
+    transition: 0.4s;
+}
+
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 18px;
+    width: 18px;
+    left: 4px;
+    bottom: 3px;
+    background-color: white;
+    border-radius: 50%;
+    transition: 0.4s;
+}
+
+input:checked + .slider {
+    background-color: #2196F3;
+}
+
+input:checked + .slider:before {
+    transform: translateX(26px);
+}
+
+/* Estilos adicionales para el modo oscuro */
+body.dark-mode .slider {
+    background-color: #444;
+}
+
+body.dark-mode input:checked + .slider {
+    background-color: #00bcd4;
+}
+
+body.dark-mode input:checked + .slider:before {
+    background-color: #2196F3;
+}
+
+/* Estilo para el menú desplegable */
+.language-switch {
+    display: flex;
+    align-items: center;
+    font-size: 16px;
+    color: #111;
+    margin-right: 20px;
+}
+.dark-mode .language-switch span{
+    color: white;
+}
+
+.language-switch span {
+    margin-right: 10px;
+}
+
+/* Estilo para el botón del menú desplegable */
+.dropbtn {
+    background-color: #3498db;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    padding: 10px 15px;
+    border-radius: 5px;
+}
+
+/* Estilo para el contenido del menú desplegable */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #ffffff;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.dark-mode .dropdown-content{
+    background-color: #414141;
+}
+
+/* Estilo para los enlaces del menú desplegable */
+.dropdown-content a {
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    color: #333;
+}
+
+/* Cambia el color de fondo de los enlaces al pasar el mouse */
+.dropdown-content a:hover {
+    background-color: #ddd;
+}
+
+/* Muestra el menú desplegable al hacer clic en el botón */
+.show {
+    display: block;
+}
+/* Estilos para la tabla de referencia */
+.references-table {
+    max-width: 800px;
+    border-radius: 5px;
+    font-family: Arial, sans-serif;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+table th, table td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+table th {
+    background-color: #3498db;
+    color: #fff;
+}
+.correo h4{
+    padding: 20px;
+}
+.correo a{
+    margin-top: 40px;
+    color: white;
+}
+
+/* Estilos para dispositivos móviles */
+@media screen and (max-width: 768px) {
+    .header-top {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    #dark-mode-btn {
+        margin-top: 10px;
+    }
+    
+    .language-switch {
+        margin-top: 10px;
+    }
+}
+@media screen and (max-width: 768px) {
+    footer {
+        margin-top: 60px;
+        right:20px;
+        flex-direction: column;
+        text-align: center;
+    }
+    
+
+    
+    .social-icons {
+        margin-top: 20px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+
+
+    
+    .social-icons {
+        margin-top: 20px;
+    }
+    /* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    height: 100%; /* Asegura que ocupe toda la altura de la ventana */
+}
+
+/* Estilo para el contenedor principal */
+.curriculum {
+    display: flex;
+    flex-direction: column; /* Cambio a columna en dispositivos móviles */
+    background-color: #f0f0f0;
+    padding: 20px;
+    height: 100%; /* Toma toda la altura disponible */
+}
+
+/* ... (resto de estilos) */
+
+/* Estilos para dispositivos móviles */
+@media screen and (max-width: 768px) {
+    .header {
+        width: 100%; /* Ancho completo en dispositivos móviles */
+        border-radius: 0; /* Sin bordes redondeados en dispositivos móviles */
+        text-align: center; /* Centrado en dispositivos móviles */
+    }
+
+    .name {
+        margin: 20px 0; /* Reduzco el margen en dispositivos móviles */
+        font-size: 20px; /* Texto más pequeño en dispositivos móviles */
+    }
+
+    /* ... (ajusta otros estilos según sea necesario) */
+
+    .right, .education {
+        flex: 1; /* Toma el ancho completo en dispositivos móviles */
+        padding: 20px;
+        background-color: #f7f7f7;
+    }
+
+    .projects {
+        flex-direction: column; /* Cambio a columna en dispositivos móviles */
+    }
+
+    .project {
+        width: 100%; /* Ancho completo en dispositivos móviles */
+    }
+
+    /* ... (ajusta otros estilos según sea necesario) */
+
+    .contact-form {
+        margin-top: 20px; /* Reduce el margen superior en dispositivos móviles */
+        padding: 20px;
+        max-width: 100%; /* Ancho completo en dispositivos móviles */
+        border-radius: 0; /* Sin bordes redondeados en dispositivos móviles */
+    }
+
+    .contact-form {
+        margin: 0; /* Sin margen en dispositivos móviles */
+    }
+
+    .social-icons {
+        margin: 20px 0; /* Margen superior e inferior en dispositivos móviles */
+    }
+
+
+    .references-table {
+        max-width: 100%; /* Ancho completo en dispositivos móviles */
+        border-radius: 0; /* Sin bordes redondeados en dispositivos móviles */
+        border-collapse: collapse;
+        overflow-x: auto;
+    }
+
+    table th, table td {
+        padding: 10px; /* Reduce el espaciado en celdas en dispositivos móviles */
+        font-size: 14px; /* Texto más pequeño en dispositivos móviles */
+
+    }
+  }
 }

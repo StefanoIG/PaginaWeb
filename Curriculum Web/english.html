@@ -4,32 +4,73 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="curriculum.css">
+    <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
     <title>My Resume</title>
+
 </head>
+
 <body>
+
     <div class="curriculum">
+
         <div class="header">
+
+            <div class="Foto"><img class="class_foto" src="/img/perfil.jpg" alt="Profile Picture"></div>
+
             <div class="name">Stefano Aguilar</div>
+            <div class="correo"><h4>Email for contact:</h3><a href="mailto:stefano20033@gmail.com">stefano20033@gmail.com</div></a>
             <h2>Skills</h2>
+
             <div class="skills">
                 <div class="skill">
                     <div class="skill-name">Java</div>
                     <div class="progress">
-                        <div class="progress-bar" style="width: 40%;"></div>
+                        <div class="progress-bar" style="width: 48%;"></div>
                     </div>
                 </div>
+
                 <div class="skill">
                     <div class="skill-name">JavaScript</div>
                     <div class="progress">
                         <div class="progress-bar" style="width: 30%;"></div>
                     </div>
                 </div>
+
                 <div class="skill">
                     <div class="skill-name">Python</div>
                     <div class="progress">
                         <div class="progress-bar" style="width: 25%;"></div>
                     </div>
                 </div>
+
+                <div class="skill">
+                    <div class="skill-name">React</div>
+                    <div class="progress">
+                        <div class="progress-bar" style="width: 25%;"></div>
+                    </div>
+                </div>
+
+                <div class="skill">
+                    <div class="skill-name">Arduino</div>
+                    <div class="progress">
+                        <div class="progress-bar" style="width: 50%;"></div>
+                    </div>
+                </div>
+
+                <div class="skill">
+                    <div class="skill-name">Django</div>
+                    <div class="progress">
+                        <div class="progress-bar" style="width: 25%;"></div>
+                    </div>
+                </div> 
+
+                <div class="skill">
+                    <div class="skill-name">SQL</div>
+                    <div class="progress">
+                        <div class="progress-bar" style="width: 50%;"></div>
+                    </div>
+                </div>
+
             </div>
             
             <h2>Languages</h2>
@@ -41,13 +82,33 @@
 
         <div class="right">
 
+            <div class="header-top">
+
+                <div class="mode">
+                    <i class='bx bx-sun '></i>
+                    <label class="switch">
+                        <input type="checkbox" id="dark-mode-toggle">
+                        <span class="slider"></span>
+                    </label>
+                    <i class='bx bx-moon '></i>
+                </div>
+                <div class="language-switch">
+                    <span>Are you in the language:</span>
+                    <div class="dropdown">
+                        <button onclick="toggleDropdown()" class="dropbtn">English</button>
+                        <div id="myDropdown" class="dropdown-content">
+                            <a href="spanish.html">Español</a>
+                            <a href="english.html">English</a>
+                        </div>
+                    </div>
+                </div>
+
+                
+            </div>
+
             <div class="profile">
                 <h2>Professional Profile</h2>
-                <p>Hello! I'm Stefano Aguilar, a student of Information Technology Engineering, currently in the fifth semester. Passionate about technology and development, I have led prominent projects, including IP address calculators for both IPv4 and IPv6, as well as the creation of interfaces connected to databases using Python.
-
-                    I have skills in various programming languages, such as Java, Python, PHP, HTML, CSS, and JavaScript. My ability to work under pressure and find effective solutions is a strength, and I adapt well both as a team leader or a collaborative team member.
-                    
-                    I'm enthusiastic about problem-solving and innovation, and I enjoy sharing knowledge with colleagues. I aim to contribute to challenging projects and continue growing in Information Technology Engineering.
+                <p>Information Technology Engineering student with a passion for technology and development. Prominent leader of projects, including IP address calculators and database interfaces in Python. Skills in Java, Python, PHP, HTML, CSS and JavaScript. Expert in problem solving, collaborative and focused on innovation. I am looking to contribute to challenging IT projects. 
                 </p>
             </div>
             <h2>Projects</h2>
@@ -55,17 +116,35 @@
                 
                 <div class="project">
                     <div class="project-info">
-                        <h3><a href="#">Network Calculator</a></h3>
-                        <p>An IP address calculator for both IPv4 and IPv6.</p>
+                        <h3><a href="https://github.com/StefanoIG/CalculadorasIPs">Network Calculator</a></h3>
+                        <p>An IP address calculator for IPv4 and IPv6.</p>
                     </div>
                     <img class="project-image" src="img/calculadora.jpeg" alt="Network Calculator">
                 </div>
+
                 <div class="project">
                     <div class="project-info">
-                        <h3><a href="#">Login System (Python)</a></h3>
+                        <h3><a href="https://github.com/StefanoIG/InterfazPython">Login System (Python)</a></h3>
                         <p>A login system developed in Python.</p>
                     </div>
                     <img class="project-image" src="img/login.jpg" alt="Login System (Python)">
+                </div>
+
+                <div class="project">
+                    <div class="project-info">
+                        <h3><a href="https://github.com/StefanoIG/Unir_Pdf_Python">Merge PDFs (Python)</a></h3>
+                        <p>Merge multiple PDFs into one.</p>
+                    </div>
+                    <img class="project-image" src="img/Unir.jpg" alt="Merge PDFs (Python)">
+                </div>
+
+
+                <div class="project">
+                    <div class="project-info">
+                        <h3><a href="https://github.com/StefanoIG/Unir_Pdf_Python">Split PDFs (Python)</a></h3>
+                        <p>Split a PDF into multiple pages, each with its respective PDF.</p>
+                    </div>
+                    <img class="project-image" src="img/separ.jpg" alt="Split PDFs (Python)">
                 </div>
             </div>
             
@@ -73,13 +152,51 @@
             <div class="education">
                 <h2>Education</h2>
                 <ul>
-                    <li>Bachelor's Degree in Science</li>
-                    <li>Google Certification</li>
-                    <li>Database Course</li>
-                    <li>Web Programming Course (React, Reactive, etc.)</li>
+                    <li>Bachelor of Science</li>
+                    <li>Google Training Certification by Google</li>
+                    <li>TIEC Training: 2022 By Cedia</li>
+                    <li>Certification in Linux By Cisco</li>
+                    <li>Information Technology Engineering at the Eloy Alfaro Laica University [In progress]</li>
+                    <li>Web Programming Course by Udemy (React, Reactive, etc.) [In progress]</li>
                 </ul>
             </div>
-            
+        
+
+            <div class="references-table">
+                <h2>Personal References:</h2>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Name</th>
+                            <th>Relationship</th>
+                            <th>Email</th>
+                            <th>Phone</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Samuel Campuzano</td>
+                            <td>Close Friend</td>
+                            <td><a href="mailto:e1729596328@live.uleam.edu.ec">e1729596328@live.uleam.edu.ec</a></td>
+                            <td>+593 98 405 1237</td>
+                        </tr>
+                        <tr>
+                            <td>Cristhian Ortiz</td>
+                            <td>Friend</td>
+                            <td><a href="mailto:e1316313079@live.uleam.edu.ec">e1316313079@live.uleam.edu.ec</a></td>
+                            <td>+593 99 161 4142</td>
+                        </tr>
+                        <tr>
+                            <td>Josthin Baque</td>
+                            <td>Friend</td>
+                            <td><a href="mailto:e1313512764@live.uleam.edu.ec">e1313512764@live.uleam.edu.ec</a></td>
+                            <td>+593 97 909 6608</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+        </div> 
             <footer>
                 <div class="contact-form">
                     <h3>Contact</h3>
@@ -104,7 +221,7 @@
                     </form>
                 </div>
                 <div class="social-icons">
-                    <a href="https://api.whatsapp.com/send?phone=+593995389259" target="_blank">
+                    <a href="https://api.whatsapp.com/send?phone=593995389259" target="_blank">
                         <img src="img/whatsapp.png" alt="WhatsApp">
                     </a>
                     <a href="https://github.com/StefanoIG" target="_blank">
@@ -112,7 +229,65 @@
                     </a>
                 </div>
             </footer>
-        </div>
+
+       
+            
+
     </div>
-</body>
+
+            <script>
+                const darkModeToggle = document.getElementById('dark-mode-toggle');
+        const body = document.body;
+
+        // Check if the user has previously selected a mode
+        if (localStorage.getItem('darkMode') === 'true') {
+        enableDarkMode();
+        }
+
+        // Add a change event to the toggle
+        darkModeToggle.addEventListener('change', () => {
+        if (darkModeToggle.checked) {
+            enableDarkMode();
+        } else {
+            disableDarkMode();
+        }
+        });
+
+        // Enable dark mode
+        function enableDarkMode() {
+        body.classList.add('dark-mode');
+        localStorage.setItem('darkMode', 'true');
+        }
+
+        // Disable dark mode
+        function disableDarkMode() {
+        body.classList.remove('dark-mode');
+        localStorage.setItem('darkMode', 'false');
+        }
+        </script>
+
+        <script>
+            /* Function to show/hide the dropdown menu */
+            function toggleDropdown() {
+                var dropdown = document.getElementById("myDropdown");
+                dropdown.classList.toggle("show");
+            }
+        
+            // Close the dropdown menu if the user clicks outside of it
+            window.onclick = function (event) {
+                if (!event.target.matches('.dropbtn')) {
+                    var dropdowns = document.getElementsByClassName("dropdown-content");
+                    for (var i = 0; i < dropdowns.length; i++) {
+                        var openDropdown = dropdowns[i];
+                        if (openDropdown.classList.contains('show')) {
+                            openDropdown.classList.remove('show');
+                        }
+                    }
+                }
+            }
+        </script>
+        
+      
+      
+    </body>
 </html>

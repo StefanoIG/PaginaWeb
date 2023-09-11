@@ -4,13 +4,23 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="curriculum.css">
+    <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
     <title>Mi Currículum</title>
 </head>
+
 <body>
+
     <div class="curriculum">
+
         <div class="header">
+            
+            <div class="Foto"><img class="class_foto" src="/img/perfil.jpg" alt="Foto perfil"></div>
+
             <div class="name">Stefano Aguilar</div>
+            <div class="correo"><h4>Correo de contacto:</h3><a href="mailto:stefano20033@gmail.com">stefano20033@gmail.com</div></a>
+
             <h2>Habilidades</h2>
+
             <div class="skills">
                 <div class="skill">
                     <div class="skill-name">Java</div>
@@ -18,42 +28,49 @@
                         <div class="progress-bar" style="width: 48%;"></div>
                     </div>
                 </div>
+
                 <div class="skill">
                     <div class="skill-name">JavaScript</div>
                     <div class="progress">
                         <div class="progress-bar" style="width: 30%;"></div>
                     </div>
                 </div>
+
                 <div class="skill">
                     <div class="skill-name">Python</div>
                     <div class="progress">
                         <div class="progress-bar" style="width: 25%;"></div>
                     </div>
                 </div>
+
                 <div class="skill">
                     <div class="skill-name">React</div>
                     <div class="progress">
                         <div class="progress-bar" style="width: 25%;"></div>
                     </div>
                 </div>
+
                 <div class="skill">
                     <div class="skill-name">Arduino</div>
                     <div class="progress">
                         <div class="progress-bar" style="width: 50%;"></div>
                     </div>
                 </div>
+
                 <div class="skill">
                     <div class="skill-name">Django</div>
                     <div class="progress">
                         <div class="progress-bar" style="width: 25%;"></div>
                     </div>
                 </div> 
+
                 <div class="skill">
                     <div class="skill-name">Sql</div>
                     <div class="progress">
                         <div class="progress-bar" style="width: 50%;"></div>
                     </div>
                 </div>
+
             </div>
             
             <h2>Idiomas</h2>
@@ -65,20 +82,34 @@
 
         <div class="right">
 
-            <div class="header-top">
-                <button id="dark-mode-btn">Modo Oscuro</button>
-                <div class="language-switch">
-                    <a href="spanish.html">Español</a> | <a href="english.html">English</a>
+
+            <div class="header-top ">
+
+                <div class="mode">
+                    <i class='bx bx-sun '></i>
+                    <label class="switch">
+                        <input type="checkbox" id="dark-mode-toggle">
+                        <span class="slider"></span>
+                    </label>
+                    <i class='bx bx-moon '></i>
                 </div>
+                <div class="language-switch">
+                    <span>Está usted en el idioma:</span>
+                    <div class="dropdown">
+                        <button onclick="toggleDropdown()" class="dropbtn">Español</button>
+                        <div id="myDropdown" class="dropdown-content">
+                            <a href="spanish.html">Español</a>
+                            <a href="english.html">English</a>
+                        </div>
+                    </div>
+                </div>
+
             </div>
 
             <div class="profile">
-                <h2>Perfil Profesional</h2>
-                <p>¡Hola! Soy Stefano Aguilar, estudiante de ingeniería en Tecnologías de la Información, actualmente en el quinto semestre. Apasionado por la tecnología y el desarrollo, he liderado proyectos destacados, incluyendo calculadoras de direcciones IP para IPv4 y IPv6, así como la creación de interfaces conectadas a bases de datos utilizando Python.
 
-                    Tengo habilidades en diversos lenguajes de programación, como Java, Python, PHP, HTML, CSS y JavaScript. Mi capacidad para trabajar bajo presión y encontrar soluciones efectivas es una fortaleza, y me adapto bien tanto como líder de equipo o como miembro colaborador.
-                    
-                    Me entusiasma la resolución de problemas y la innovación, y disfruto compartiendo conocimientos con colegas. Busco contribuir a proyectos desafiantes y seguir creciendo en la ingeniería en Tecnologías de la Información. 
+                <h2>Perfil Profesional</h2>
+                <p>Estudiante de Ingeniería en Tecnologías de la Información con pasión por la tecnología y el desarrollo. Destacado líder de proyectos, incluyendo calculadoras de direcciones IP y interfaces de bases de datos en Python. Habilidades en Java, Python, PHP, HTML, CSS y JavaScript. Experto en resolución de problemas, colaborativo y enfocado en la innovación. Busco contribuir a desafiantes proyectos de TI. 
                 </p>
             </div>
             <h2>Proyectos</h2>
@@ -86,17 +117,35 @@
                 
                 <div class="project">
                     <div class="project-info">
-                        <h3><a href="#">Calculadora de redes</a></h3>
+                        <h3><a href="https://github.com/StefanoIG/CalculadorasIPs" target="_blank">Calculadora de redes (Pyhthon)</a></h3>
                         <p>Una calculadora de direcciones IP para IPv4 y IPv6.</p>
                     </div>
                     <img class="project-image" src="img/calculadora.jpeg" alt="Calculadora de redes">
                 </div>
+
                 <div class="project">
                     <div class="project-info">
-                        <h3><a href="#">Sistema de logueo (Python)</a></h3>
+                        <h3><a href="https://github.com/StefanoIG/InterfazPython" target="_blank">Sistema de logueo (Python)</a></h3>
                         <p>Un sistema de inicio de sesión desarrollado en Python.</p>
                     </div>
                     <img class="project-image" src="img/login.jpg" alt="Sistema de logueo (Python)">
+                </div>
+
+                <div class="project">
+                    <div class="project-info">
+                        <h3><a href="https://github.com/StefanoIG/Unir_Pdf_Python" target="_blank">Unir Pdfs (Pyhthon)</a></h3>
+                        <p>Une varios Pdfs en uno solo.</p>
+                    </div>
+                    <img class="project-image" src="img/Unir.jpg" alt="Sistema de logueo (Python)">
+                </div>
+
+
+                <div class="project">
+                    <div class="project-info">
+                        <h3><a href="https://github.com/StefanoIG/Unir_Pdf_Python" target="_blank" >Separa Pdfs (Pyhthon)</a></h3>
+                        <p>Separa un Pdf en varias paginas, cada una con su respectivo pdf.</p>
+                    </div>
+                    <img class="project-image" src="img/separ.jpg" alt="Sistema de logueo (Python)">
                 </div>
             </div>
             
@@ -105,12 +154,50 @@
                 <h2>Educación</h2>
                 <ul>
                     <li>Bachiller en Ciencias</li>
-                    <li>Certificación de Google</li>
-                    <li>Curso de Bases de Datos</li>
-                    <li>Curso de Programación Web (React, Reactive, etc.)</li>
+                    <li>Certificación de Capacitacion en Google by Google</li>
+                    <li>Capacitacion TIEC:2022 By Cedia</li>
+                    <li>Certificación en Linux By Cisco</li>
+                    <li>Ingenieria en Tecnologias de la informacion en la Universidad Laica Eloy Alfaro [En curso]</li>
+                    <li>Curso de Programación Web by Udemy (React, Reactive, etc.) [En curso]</li>
                 </ul>
             </div>
-            
+        
+
+            <div class="references-table">
+                <h2>Referencias Personales:</h2>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Nombre</th>
+                            <th>Relación</th>
+                            <th>Correo Electrónico</th>
+                            <th>Teléfono</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Samuel Campozano</td>
+                            <td>Amigo Cercano</td>
+                            <td><a href="mailto:e1729596328@live.uleam.edu.ec">e1729596328@live.uleam.edu.ec</a></td>
+                            <td>+593 98 405 1237</td>
+                        </tr>
+                        <tr>
+                            <td>Cristhian Ortiz</td>
+                            <td>Amigo</td>
+                            <td><a href="mailto:e1316313079@live.uleam.edu.ec">e1316313079@live.uleam.edu.ec</a></td>
+                            <td>+593 99 161 4142</td>
+                        </tr>
+                        <tr>
+                            <td>Josthin Baque</td>
+                            <td>Amigo</td>
+                            <td><a href="mailto:e1313512764@live.uleam.edu.ec">e1313512764@live.uleam.edu.ec</a></td>
+                            <td>+593 97 909 6608</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+        </div> 
             <footer>
                 <div class="contact-form">
                     <h3>Contacto</h3>
@@ -135,7 +222,7 @@
                     </form>
                 </div>
                 <div class="social-icons">
-                    <a href="https://api.whatsapp.com/send?phone=+593995389259" target="_blank">
+                    <a href="https://api.whatsapp.com/send?phone=593995389259" target="_blank">
                         <img src="img/whatsapp.png" alt="WhatsApp">
                     </a>
                     <a href="https://github.com/StefanoIG" target="_blank">
@@ -143,43 +230,63 @@
                     </a>
                 </div>
             </footer>
+
+       
             
-            
-        </div>
+
     </div>
-    <script>
-        const darkModeBtn = document.getElementById('dark-mode-btn');
+
+            <script>
+                const darkModeToggle = document.getElementById('dark-mode-toggle');
         const body = document.body;
-      
+
         // Verifica si el usuario ya eligió un modo previamente
         if (localStorage.getItem('darkMode') === 'true') {
-          enableDarkMode();
+        enableDarkMode();
         }
-      
-        // Agrega un evento de clic al botón
-        darkModeBtn.addEventListener('click', () => {
-          if (body.classList.contains('dark-mode')) {
-            // Si ya está en modo oscuro, cambia a claro
-            disableDarkMode();
-          } else {
-            // Si no está en modo oscuro, cambia a oscuro
+
+        // Agrega un evento de cambio al toggle
+        darkModeToggle.addEventListener('change', () => {
+        if (darkModeToggle.checked) {
             enableDarkMode();
-          }
+        } else {
+            disableDarkMode();
+        }
         });
-      
+
         // Habilita el modo oscuro
         function enableDarkMode() {
-          body.classList.add('dark-mode');
-          localStorage.setItem('darkMode', 'true');
+        body.classList.add('dark-mode');
+        localStorage.setItem('darkMode', 'true');
         }
-      
+
         // Deshabilita el modo oscuro
         function disableDarkMode() {
-          body.classList.remove('dark-mode');
-          localStorage.setItem('darkMode', 'false');
+        body.classList.remove('dark-mode');
+        localStorage.setItem('darkMode', 'false');
         }
-      </script>
-      
-      
-</body>
+        </script>
+
+        <script>
+            /* Función para mostrar/ocultar el menú desplegable */
+            function toggleDropdown() {
+                var dropdown = document.getElementById("myDropdown");
+                dropdown.classList.toggle("show");
+            }
+        
+            // Cierra el menú desplegable si el usuario hace clic fuera de él
+            window.onclick = function (event) {
+                if (!event.target.matches('.dropbtn')) {
+                    var dropdowns = document.getElementsByClassName("dropdown-content");
+                    for (var i = 0; i < dropdowns.length; i++) {
+                        var openDropdown = dropdowns[i];
+                        if (openDropdown.classList.contains('show')) {
+                            openDropdown.classList.remove('show');
+                        }
+                    }
+                }
+            }
+        </script>
+        
+    </body>
 </html>

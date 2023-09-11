@@ -1,51 +1,79 @@
 body {
-    background-color: antiquewhite;
+    background: rgb(131,58,180);
+    background: linear-gradient(90deg, rgba(131,58,180,1) 0%, rgba(253,29,29,1) 50%, rgba(252,176,69,1) 100%);
     display: flex;
     justify-content: center;
-    align-items: center;
-    min-height: 100vh;
-    margin: 0;
-}
-
-.contenedor_principal {
-    display: flex;
+    flex-direction: row;
     justify-content: center;
     align-items: center;
-    flex-wrap: wrap; /* Permite que los cuadros se envuelvan en pantallas pequeñas */
+    margin: auto;
+}
+.idioma{
+font-size: 24px;
+flex-grow: 1;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+margin: auto;
+transition: all 0.3s ease;
 }
 
-.cuadro {
-    width: 200px;
-    height: 200px;
-    border: 3px solid #000;
-    text-align: center;
-    font-size: 24px;
-    margin: 10px;
-    border-radius: 5px;
-    display: flex;
-    flex-direction: column; /* Para alinear el texto y la bandera verticalmente */
+.idioma_espanol{
+    height: 100%;
+    width: 50%;
+    padding: 22%;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
+    border-right: #000000 solid 1px;
+ }
+
+ .idioma_ingles{
+    margin: auto;
+    height: 100%;
+    width: 50%;
+    padding: 22.9%;
+ }
+
+ .idioma_ingles:hover {
+    border-left:  #000000 solid 1px ;
 }
 
-.spanish {
-    background-color: lightblue;
-}
 
-.english {
-    background-color: lightblue;
-}
-
-/* Estilo para las banderas */
 .bandera {
-    width: 50px; /* Reducir el tamaño de las banderas a 10px */
-    height: auto; /* Mantener la relación de aspecto */
+    width: 60px;
+    height: auto;
+    margin: 8px;
 }
-
-/* Estilos para pantallas más pequeñas */
-@media (max-width: 768px) {
-    .cuadro {
-        width: 100%;
-        margin: 10px 0; /* Espacio vertical entre los cuadros */
+.idioma:hover {
+    font-size: 28px;
+    transform: scale(1.2);
+    background: rgb(63,94,251);
+    background: radial-gradient(circle, rgba(63,94,251,1) 0%, rgba(252,70,107,1) 100%);
+    cursor: pointer; /* Cambia el cursor al pasar el ratón */
+    .bandera{
+        width: 80px;
     }
+}
+a {
+    color: #000000;
+    font-weight: bold;
+    align-items: center;
+    text-decoration: none;
+}
+@media screen and (max-width: 768px) {
+    .idioma{
+        width: 8%;
+        height: 8%;
+        padding-top: 70%;
+        padding-bottom: 100%;
+        border: none;
+    }
+
+
+    .idioma_espanol{
+        border-right: #000000 solid 1px;
+    }
+
 }
