@@ -1,3 +1,4 @@
+/*Etiquetas globales*/
 body {
     background: rgb(131,58,180);
     background: linear-gradient(90deg, rgba(131,58,180,1) 0%, rgba(253,29,29,1) 50%, rgba(252,176,69,1) 100%);
@@ -8,6 +9,7 @@ body {
     align-items: center;
     margin: auto;
 }
+/*Etiquetas bloques de idioma*/
 .idioma{
 font-size: 24px;
 flex-grow: 1;
@@ -70,7 +72,6 @@ a {
         padding-bottom: 100%;
         border: none;
     }
-
 
     .idioma_espanol{
         border-right: #000000 solid 1px;
